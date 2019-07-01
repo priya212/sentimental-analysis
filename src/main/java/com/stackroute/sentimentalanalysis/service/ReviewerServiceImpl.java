@@ -28,11 +28,6 @@ public class ReviewerServiceImpl implements ReviewerService{
     @PostConstruct
     public void init(){
         properties.setProperty("annotators", "tokenize,ssplit,pos,lemma,depparse,parse,natlog,openie,sentiment");
-       /* properties.setProperty("pos.model", "russian-ud-pos.tagger");
-        properties.setProperty("ner.model", "english_UD.gz");
-        properties.setProperty("ner.useSUTime", "false");
-        properties.setProperty("ner.applyNumericClassifiers", "false");
-        properties.setProperty("sutime.includeRange", "false");*/
         pipeline=new StanfordCoreNLP(properties);
     }
 
@@ -111,30 +106,4 @@ public class ReviewerServiceImpl implements ReviewerService{
         review=review.toLowerCase();
         return  review;
     }
-
-    //
-//    @Override
-//    public Reviewer getReviewerByName(String reviewerName) {
-//        Reviewer reviewer=null;
-//        if(reviewerRepository.existsById(reviewerName)) {
-//            reviewer=;
-//        }
-//        return  reviewer;
-//    }
-
-
-//    @Override
-//    public Reviewer getReview(String reviewerName) {
-//        List<Reviewer> reviewerList=getAllReviewer();
-//        Reviewer reviewer=null;
-//        String review="";
-//        if(reviewerList.contains(reviewerName))
-//        {
-//             reviewer=reviewerList.get(0);
-//             //review=reviewer.getReview();
-//        }
-//
-//        return reviewerRepository.getReviewerByName(reviewerName);
-//    }
-
 }

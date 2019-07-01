@@ -6,5 +6,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface ReviewerRepository extends MongoRepository<Reviewer,String> {
-   // public Reviewer getReviewerByName(String reviewerName);
+
 }

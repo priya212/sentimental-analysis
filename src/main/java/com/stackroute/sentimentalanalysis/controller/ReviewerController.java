@@ -47,13 +47,6 @@ public class ReviewerController {
         return  responseEntity;
     }
 
-
-//    @GetMapping("reviewer/{reviewerName}")
-//    public ResponseEntity<?> getReviewerByName(@PathVariable String reviewerName)
-//    {
-//        return  new ResponseEntity<Reviewer>(reviewerService.getReviewerByName(reviewerName),HttpStatus.OK);
-//    }
-
     @DeleteMapping("delete/{reviewerName}")
     public ResponseEntity<?> deleteReviewer(@PathVariable String reviewerName)
     {

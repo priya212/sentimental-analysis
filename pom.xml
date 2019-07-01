@@ -34,13 +34,6 @@
 			<artifactId>lombok</artifactId>
 			<optional>true</optional>
 		</dependency>
-		<!-- https://mvnrepository.com/artifact/edu.stanford/stanford-parse-models -->
-<!--		<dependency>-->
-<!--			<groupId>edu.stanford</groupId>-->
-<!--			<artifactId>stanford-parse-models</artifactId>-->
-<!--			<version>2011-12-16</version>-->
-<!--		</dependency>-->
-
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-mongodb</artifactId>
